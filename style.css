@@ -47,7 +47,7 @@ body {
 .container__level__button:hover {
   border-color: #0080C1;
 }
-.container__button {
+.container__start__button {
   background: #7AC100;
   border-radius: 12px;
   border: none;
