@@ -47,6 +47,9 @@ body {
 .container__level__button:hover {
   border-color: #0080C1;
 }
+.container__level__button:focus {
+  border-color: #0080C1;
+}
 .container__start__button {
   background: #7AC100;
   border-radius: 12px;
@@ -61,6 +64,10 @@ body {
   color: #FFFFFF;
   margin-top: 67px;
   margin-bottom: 50px;
+  transition: background 1s;
+}
+.container__start__button:hover {
+  background: #228B22;
 }
 
 @font-face {
