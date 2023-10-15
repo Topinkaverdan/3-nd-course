@@ -11,7 +11,7 @@ export const header = `<div class="header">
         <button class="header__button__retry">Начать заново</button>
         </div>`
 
-export const imagesCards = [`<img src="img/6 бубны.png" width="120px" alt="back of a card">`,
+export let imagesCards = [`<img src="img/6 бубны.png" width="120px" alt="back of a card">`,
                 `<img src="img/6 крести.png" width="120px" alt="back of a card">`,
                 `<img src="img/6 черви.png" width="120px" alt="back of a card">`,
                 `<img src="img/6 пики.png" width="120px" alt="back of a card">`,
@@ -48,4 +48,4 @@ export const imagesCards = [`<img src="img/6 бубны.png" width="120px" alt="
                 `<img src="img/туз черви.png" width="120px" alt="back of a card">`,
                 `<img src="img/туз пики.png" width="120px" alt="back of a card">`]
 
-export const backOfCard =  `<img src="img/рубашка.png" width="120px" alt="back of a card">`
+export const backOfCard =  [`<img src="img/рубашка.png" width="120px" alt="back of a card">`]

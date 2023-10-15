@@ -1,4 +1,5 @@
-import { header } from "/components.js";
+import { getLevelDifficulty } from "./renderLevels.js";
+import { getNoAnswer } from "./renderLevels.js";
 
 export let levelDifficulty;
 
@@ -7,6 +8,7 @@ const renderLevelApp = (app, html) => {
     return app.innerHTML = html;
 
 }
+
 const renderApp = () => {
 
     const appElement = document.querySelector("body");
@@ -44,68 +46,9 @@ const renderApp = () => {
 
     buttonStartElement.addEventListener('click', () => {
 
-        appElement.classList.remove('start')
+        appElement.classList.remove('start');
 
-        function getLevelDifficulty() {
-
-            if (levelDifficulty == 1) {
-
-                return appHtml = header + `<div class="level">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                </div>`;
-                
-             }
-     
-             if (levelDifficulty == 2) {
-                 
-                return appHtml = header + `<div class="level level__two">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                </div>`;
-        
-             }
-     
-             if (levelDifficulty == 3) {
-                 
-                 return appHtml = header + `<div class="level level__free">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                    <img src="img/рубашка.png" width="120px" alt="back of a card">
-                </div>`;
-                 
-             }
-
-        }
+        // getLevelDifficulty(appHtml);
 
         if (!levelDifficulty) {
             
@@ -116,6 +59,8 @@ const renderApp = () => {
         } else {
 
             renderLevelApp(appElement, getLevelDifficulty());
+            
+            setTimeout(() => {return renderLevelApp(appElement, getNoAnswer())}, 5000);
             
         }
 
