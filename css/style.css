@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  background-color: #C2F5FF;
+  background-color: #c2f5ff;
   border-radius: 12px;
   width: 480px;
   margin-top: 158px;
@@ -30,7 +30,7 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng, sans-serif;
   color: #004980;
 }
 .container__level {
@@ -39,7 +39,7 @@ body {
   gap: 24px;
 }
 .container__level__button {
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 12px;
   border-color: transparent;
   width: 98px;
@@ -48,34 +48,34 @@ body {
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
-  font-family: "StratosSkyeng";
-  color: #0080C1;
+  font-family: StratosSkyeng, sans-serif;
+  color: #0080c1;
   transition: border-color 1s;
 }
 .container__level__button:hover {
-  border-color: #0080C1;
+  border-color: #0080c1;
 }
 .container__level__button:focus {
-  border-color: #0080C1;
+  border-color: #0080c1;
 }
 .container__start__button {
-  background: #7AC100;
+  background: #7ac100;
   border-radius: 12px;
   border: none;
   width: 246px;
   height: 50px;
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #fff;
   margin-top: 67px;
   margin-bottom: 50px;
   transition: background 1s;
 }
 .container__start__button:hover {
-  background: #228B22;
+  background: #228b22;
 }
 
 .header {
@@ -97,20 +97,20 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  font-family: "StratosSkyeng";
-  color: #FFFFFF;
+  font-family: StratosSkyeng, sans-serif;
+  color: #fff;
 }
 .header__timer__time {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng, sans-serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 72px;
-  color: #FFFFFF;
+  color: #fff;
 }
 .header__button__retry {
   margin-right: 23px;
   margin-top: 53px;
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -119,8 +119,8 @@ body {
   height: 48px;
   border-radius: 12px;
   border: none;
-  background-color: #7AC100;
-  color: #FFFFFF;
+  background-color: #7ac100;
+  color: #fff;
 }
 
 .level {
@@ -138,6 +138,6 @@ body {
 }
 
 @font-face {
-  font-family: "StratosSkyeng";
-  src: url(fonts/stratosskyengweb-regular.woff2);
+  font-family: StratosSkyeng;
+  src: url("fonts/stratosskyengweb-regular.woff2");
 }/*# sourceMappingURL=style.css.map */
